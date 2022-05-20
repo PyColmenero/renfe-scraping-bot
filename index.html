@@ -1,0 +1,1750 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* width */
+        ::-webkit-scrollbar {
+            width: 2px;
+        }
+
+        /* Track */
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+            background: #888;
+        }
+
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+
+        body {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #ida,
+        #vuelta {
+            width: 48%;
+        }
+
+        .month_days {
+            display: flex;
+            flex-wrap: wrap;
+            border-top: 1px solid grey;
+            border-left: 1px solid grey;
+        }
+
+        .day {
+            width: calc((100% / 7) - 2px);
+            border-right: 1px solid grey;
+            border-bottom: 1px solid grey;
+        }
+
+        .day>p {
+            text-align: center;
+            margin: 1px;
+        }
+
+        .day_offers {
+            height: 4rem;
+            overflow-y: scroll;
+        }
+    </style>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="./offers.js"></script>
+
+</head>
+
+<body>
+
+
+    <div id="ida">
+        <div class='month'>
+            <h2 class="ida_month_name"> agosto </h2>
+            <div class='month_days'>
+                <div class='day'>
+                    <p> 1 </p>
+                    <div class='day_offers' id='ida01-08'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 2 </p>
+                    <div class='day_offers' id='ida02-08'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 3 </p>
+                    <div class='day_offers' id='ida03-08'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 4 </p>
+                    <div class='day_offers' id='ida04-08'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 5 </p>
+                    <div class='day_offers' id='ida05-08'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 6 </p>
+                    <div class='day_offers' id='ida06-08'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 7 </p>
+                    <div class='day_offers' id='ida07-08'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 8 </p>
+                    <div class='day_offers' id='ida08-08'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 9 </p>
+                    <div class='day_offers' id='ida09-08'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 10 </p>
+                    <div class='day_offers' id='ida10-08'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 11 </p>
+                    <div class='day_offers' id='ida11-08'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 12 </p>
+                    <div class='day_offers' id='ida12-08'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 13 </p>
+                    <div class='day_offers' id='ida13-08'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 14 </p>
+                    <div class='day_offers' id='ida14-08'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 15 </p>
+                    <div class='day_offers' id='ida15-08'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 16 </p>
+                    <div class='day_offers' id='ida16-08'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 17 </p>
+                    <div class='day_offers' id='ida17-08'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 18 </p>
+                    <div class='day_offers' id='ida18-08'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 19 </p>
+                    <div class='day_offers' id='ida19-08'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 20 </p>
+                    <div class='day_offers' id='ida20-08'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 21 </p>
+                    <div class='day_offers' id='ida21-08'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 22 </p>
+                    <div class='day_offers' id='ida22-08'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 23 </p>
+                    <div class='day_offers' id='ida23-08'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 24 </p>
+                    <div class='day_offers' id='ida24-08'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 25 </p>
+                    <div class='day_offers' id='ida25-08'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 26 </p>
+                    <div class='day_offers' id='ida26-08'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 27 </p>
+                    <div class='day_offers' id='ida27-08'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 28 </p>
+                    <div class='day_offers' id='ida28-08'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 29 </p>
+                    <div class='day_offers' id='ida29-08'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 30 </p>
+                    <div class='day_offers' id='ida30-08'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 31 </p>
+                    <div class='day_offers' id='ida31-08'>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class='month'>
+            <h2 class="ida_month_name"> septiembre </h2>
+            <div class='month_days'>
+                <div class='day'>
+                    <p> </p>
+                    <div class='day_offers'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> </p>
+                    <div class='day_offers'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 1 </p>
+                    <div class='day_offers' id='ida01-09'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 2 </p>
+                    <div class='day_offers' id='ida02-09'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 3 </p>
+                    <div class='day_offers' id='ida03-09'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 4 </p>
+                    <div class='day_offers' id='ida04-09'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 5 </p>
+                    <div class='day_offers' id='ida05-09'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 6 </p>
+                    <div class='day_offers' id='ida06-09'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 7 </p>
+                    <div class='day_offers' id='ida07-09'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 8 </p>
+                    <div class='day_offers' id='ida08-09'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 9 </p>
+                    <div class='day_offers' id='ida09-09'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 10 </p>
+                    <div class='day_offers' id='ida10-09'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 11 </p>
+                    <div class='day_offers' id='ida11-09'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 12 </p>
+                    <div class='day_offers' id='ida12-09'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 13 </p>
+                    <div class='day_offers' id='ida13-09'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 14 </p>
+                    <div class='day_offers' id='ida14-09'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 15 </p>
+                    <div class='day_offers' id='ida15-09'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 16 </p>
+                    <div class='day_offers' id='ida16-09'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 17 </p>
+                    <div class='day_offers' id='ida17-09'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 18 </p>
+                    <div class='day_offers' id='ida18-09'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 19 </p>
+                    <div class='day_offers' id='ida19-09'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 20 </p>
+                    <div class='day_offers' id='ida20-09'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 21 </p>
+                    <div class='day_offers' id='ida21-09'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 22 </p>
+                    <div class='day_offers' id='ida22-09'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 23 </p>
+                    <div class='day_offers' id='ida23-09'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 24 </p>
+                    <div class='day_offers' id='ida24-09'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 25 </p>
+                    <div class='day_offers' id='ida25-09'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 26 </p>
+                    <div class='day_offers' id='ida26-09'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 27 </p>
+                    <div class='day_offers' id='ida27-09'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 28 </p>
+                    <div class='day_offers' id='ida28-09'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 29 </p>
+                    <div class='day_offers' id='ida29-09'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 30 </p>
+                    <div class='day_offers' id='ida30-09'>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class='month'>
+            <h2 class="ida_month_name"> octubre </h2>
+            <div class='month_days'>
+                <div class='day'>
+                    <p> </p>
+                    <div class='day_offers'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> </p>
+                    <div class='day_offers'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> </p>
+                    <div class='day_offers'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> </p>
+                    <div class='day_offers'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 1 </p>
+                    <div class='day_offers' id='ida01-10'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 2 </p>
+                    <div class='day_offers' id='ida02-10'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 3 </p>
+                    <div class='day_offers' id='ida03-10'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 4 </p>
+                    <div class='day_offers' id='ida04-10'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 5 </p>
+                    <div class='day_offers' id='ida05-10'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 6 </p>
+                    <div class='day_offers' id='ida06-10'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 7 </p>
+                    <div class='day_offers' id='ida07-10'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 8 </p>
+                    <div class='day_offers' id='ida08-10'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 9 </p>
+                    <div class='day_offers' id='ida09-10'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 10 </p>
+                    <div class='day_offers' id='ida10-10'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 11 </p>
+                    <div class='day_offers' id='ida11-10'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 12 </p>
+                    <div class='day_offers' id='ida12-10'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 13 </p>
+                    <div class='day_offers' id='ida13-10'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 14 </p>
+                    <div class='day_offers' id='ida14-10'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 15 </p>
+                    <div class='day_offers' id='ida15-10'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 16 </p>
+                    <div class='day_offers' id='ida16-10'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 17 </p>
+                    <div class='day_offers' id='ida17-10'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 18 </p>
+                    <div class='day_offers' id='ida18-10'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 19 </p>
+                    <div class='day_offers' id='ida19-10'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 20 </p>
+                    <div class='day_offers' id='ida20-10'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 21 </p>
+                    <div class='day_offers' id='ida21-10'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 22 </p>
+                    <div class='day_offers' id='ida22-10'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 23 </p>
+                    <div class='day_offers' id='ida23-10'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 24 </p>
+                    <div class='day_offers' id='ida24-10'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 25 </p>
+                    <div class='day_offers' id='ida25-10'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 26 </p>
+                    <div class='day_offers' id='ida26-10'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 27 </p>
+                    <div class='day_offers' id='ida27-10'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 28 </p>
+                    <div class='day_offers' id='ida28-10'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 29 </p>
+                    <div class='day_offers' id='ida29-10'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 30 </p>
+                    <div class='day_offers' id='ida30-10'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 31 </p>
+                    <div class='day_offers' id='ida31-10'>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class='month'>
+            <h2 class="ida_month_name"> noviembre </h2>
+            <div class='month_days'>
+                <div class='day'>
+                    <p> 1 </p>
+                    <div class='day_offers' id='ida01-11'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 2 </p>
+                    <div class='day_offers' id='ida02-11'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 3 </p>
+                    <div class='day_offers' id='ida03-11'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 4 </p>
+                    <div class='day_offers' id='ida04-11'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 5 </p>
+                    <div class='day_offers' id='ida05-11'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 6 </p>
+                    <div class='day_offers' id='ida06-11'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 7 </p>
+                    <div class='day_offers' id='ida07-11'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 8 </p>
+                    <div class='day_offers' id='ida08-11'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 9 </p>
+                    <div class='day_offers' id='ida09-11'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 10 </p>
+                    <div class='day_offers' id='ida10-11'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 11 </p>
+                    <div class='day_offers' id='ida11-11'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 12 </p>
+                    <div class='day_offers' id='ida12-11'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 13 </p>
+                    <div class='day_offers' id='ida13-11'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 14 </p>
+                    <div class='day_offers' id='ida14-11'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 15 </p>
+                    <div class='day_offers' id='ida15-11'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 16 </p>
+                    <div class='day_offers' id='ida16-11'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 17 </p>
+                    <div class='day_offers' id='ida17-11'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 18 </p>
+                    <div class='day_offers' id='ida18-11'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 19 </p>
+                    <div class='day_offers' id='ida19-11'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 20 </p>
+                    <div class='day_offers' id='ida20-11'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 21 </p>
+                    <div class='day_offers' id='ida21-11'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 22 </p>
+                    <div class='day_offers' id='ida22-11'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 23 </p>
+                    <div class='day_offers' id='ida23-11'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 24 </p>
+                    <div class='day_offers' id='ida24-11'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 25 </p>
+                    <div class='day_offers' id='ida25-11'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 26 </p>
+                    <div class='day_offers' id='ida26-11'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 27 </p>
+                    <div class='day_offers' id='ida27-11'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 28 </p>
+                    <div class='day_offers' id='ida28-11'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 29 </p>
+                    <div class='day_offers' id='ida29-11'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 30 </p>
+                    <div class='day_offers' id='ida30-11'>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class='month'>
+            <h2 class="ida_month_name"> diciembre </h2>
+            <div class='month_days'>
+                <div class='day'>
+                    <p> </p>
+                    <div class='day_offers'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> </p>
+                    <div class='day_offers'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 1 </p>
+                    <div class='day_offers' id='ida01-12'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 2 </p>
+                    <div class='day_offers' id='ida02-12'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 3 </p>
+                    <div class='day_offers' id='ida03-12'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 4 </p>
+                    <div class='day_offers' id='ida04-12'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 5 </p>
+                    <div class='day_offers' id='ida05-12'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 6 </p>
+                    <div class='day_offers' id='ida06-12'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 7 </p>
+                    <div class='day_offers' id='ida07-12'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 8 </p>
+                    <div class='day_offers' id='ida08-12'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 9 </p>
+                    <div class='day_offers' id='ida09-12'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 10 </p>
+                    <div class='day_offers' id='ida10-12'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 11 </p>
+                    <div class='day_offers' id='ida11-12'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 12 </p>
+                    <div class='day_offers' id='ida12-12'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 13 </p>
+                    <div class='day_offers' id='ida13-12'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 14 </p>
+                    <div class='day_offers' id='ida14-12'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 15 </p>
+                    <div class='day_offers' id='ida15-12'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 16 </p>
+                    <div class='day_offers' id='ida16-12'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 17 </p>
+                    <div class='day_offers' id='ida17-12'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 18 </p>
+                    <div class='day_offers' id='ida18-12'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 19 </p>
+                    <div class='day_offers' id='ida19-12'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 20 </p>
+                    <div class='day_offers' id='ida20-12'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 21 </p>
+                    <div class='day_offers' id='ida21-12'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 22 </p>
+                    <div class='day_offers' id='ida22-12'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 23 </p>
+                    <div class='day_offers' id='ida23-12'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 24 </p>
+                    <div class='day_offers' id='ida24-12'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 25 </p>
+                    <div class='day_offers' id='ida25-12'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 26 </p>
+                    <div class='day_offers' id='ida26-12'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 27 </p>
+                    <div class='day_offers' id='ida27-12'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 28 </p>
+                    <div class='day_offers' id='ida28-12'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 29 </p>
+                    <div class='day_offers' id='ida29-12'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 30 </p>
+                    <div class='day_offers' id='ida30-12'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 31 </p>
+                    <div class='day_offers' id='ida31-12'>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="vuelta">
+        <div class='month'>
+            <h2 class="vuelta_month_name"> agosto </h2>
+            <div class='month_days'>
+                <div class='day'>
+                    <p> 1 </p>
+                    <div class='day_offers' id='vuelta01-08'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 2 </p>
+                    <div class='day_offers' id='vuelta02-08'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 3 </p>
+                    <div class='day_offers' id='vuelta03-08'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 4 </p>
+                    <div class='day_offers' id='vuelta04-08'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 5 </p>
+                    <div class='day_offers' id='vuelta05-08'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 6 </p>
+                    <div class='day_offers' id='vuelta06-08'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 7 </p>
+                    <div class='day_offers' id='vuelta07-08'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 8 </p>
+                    <div class='day_offers' id='vuelta08-08'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 9 </p>
+                    <div class='day_offers' id='vuelta09-08'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 10 </p>
+                    <div class='day_offers' id='vuelta10-08'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 11 </p>
+                    <div class='day_offers' id='vuelta11-08'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 12 </p>
+                    <div class='day_offers' id='vuelta12-08'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 13 </p>
+                    <div class='day_offers' id='vuelta13-08'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 14 </p>
+                    <div class='day_offers' id='vuelta14-08'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 15 </p>
+                    <div class='day_offers' id='vuelta15-08'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 16 </p>
+                    <div class='day_offers' id='vuelta16-08'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 17 </p>
+                    <div class='day_offers' id='vuelta17-08'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 18 </p>
+                    <div class='day_offers' id='vuelta18-08'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 19 </p>
+                    <div class='day_offers' id='vuelta19-08'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 20 </p>
+                    <div class='day_offers' id='vuelta20-08'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 21 </p>
+                    <div class='day_offers' id='vuelta21-08'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 22 </p>
+                    <div class='day_offers' id='vuelta22-08'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 23 </p>
+                    <div class='day_offers' id='vuelta23-08'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 24 </p>
+                    <div class='day_offers' id='vuelta24-08'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 25 </p>
+                    <div class='day_offers' id='vuelta25-08'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 26 </p>
+                    <div class='day_offers' id='vuelta26-08'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 27 </p>
+                    <div class='day_offers' id='vuelta27-08'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 28 </p>
+                    <div class='day_offers' id='vuelta28-08'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 29 </p>
+                    <div class='day_offers' id='vuelta29-08'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 30 </p>
+                    <div class='day_offers' id='vuelta30-08'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 31 </p>
+                    <div class='day_offers' id='vuelta31-08'>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class='month'>
+            <h2 class="vuelta_month_name"> septiembre </h2>
+            <div class='month_days'>
+                <div class='day'>
+                    <p> </p>
+                    <div class='day_offers'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> </p>
+                    <div class='day_offers'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 1 </p>
+                    <div class='day_offers' id='vuelta01-09'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 2 </p>
+                    <div class='day_offers' id='vuelta02-09'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 3 </p>
+                    <div class='day_offers' id='vuelta03-09'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 4 </p>
+                    <div class='day_offers' id='vuelta04-09'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 5 </p>
+                    <div class='day_offers' id='vuelta05-09'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 6 </p>
+                    <div class='day_offers' id='vuelta06-09'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 7 </p>
+                    <div class='day_offers' id='vuelta07-09'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 8 </p>
+                    <div class='day_offers' id='vuelta08-09'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 9 </p>
+                    <div class='day_offers' id='vuelta09-09'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 10 </p>
+                    <div class='day_offers' id='vuelta10-09'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 11 </p>
+                    <div class='day_offers' id='vuelta11-09'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 12 </p>
+                    <div class='day_offers' id='vuelta12-09'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 13 </p>
+                    <div class='day_offers' id='vuelta13-09'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 14 </p>
+                    <div class='day_offers' id='vuelta14-09'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 15 </p>
+                    <div class='day_offers' id='vuelta15-09'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 16 </p>
+                    <div class='day_offers' id='vuelta16-09'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 17 </p>
+                    <div class='day_offers' id='vuelta17-09'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 18 </p>
+                    <div class='day_offers' id='vuelta18-09'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 19 </p>
+                    <div class='day_offers' id='vuelta19-09'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 20 </p>
+                    <div class='day_offers' id='vuelta20-09'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 21 </p>
+                    <div class='day_offers' id='vuelta21-09'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 22 </p>
+                    <div class='day_offers' id='vuelta22-09'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 23 </p>
+                    <div class='day_offers' id='vuelta23-09'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 24 </p>
+                    <div class='day_offers' id='vuelta24-09'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 25 </p>
+                    <div class='day_offers' id='vuelta25-09'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 26 </p>
+                    <div class='day_offers' id='vuelta26-09'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 27 </p>
+                    <div class='day_offers' id='vuelta27-09'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 28 </p>
+                    <div class='day_offers' id='vuelta28-09'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 29 </p>
+                    <div class='day_offers' id='vuelta29-09'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 30 </p>
+                    <div class='day_offers' id='vuelta30-09'>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class='month'>
+            <h2 class="vuelta_month_name"> octubre </h2>
+            <div class='month_days'>
+                <div class='day'>
+                    <p> </p>
+                    <div class='day_offers'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> </p>
+                    <div class='day_offers'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> </p>
+                    <div class='day_offers'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> </p>
+                    <div class='day_offers'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 1 </p>
+                    <div class='day_offers' id='vuelta01-10'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 2 </p>
+                    <div class='day_offers' id='vuelta02-10'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 3 </p>
+                    <div class='day_offers' id='vuelta03-10'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 4 </p>
+                    <div class='day_offers' id='vuelta04-10'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 5 </p>
+                    <div class='day_offers' id='vuelta05-10'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 6 </p>
+                    <div class='day_offers' id='vuelta06-10'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 7 </p>
+                    <div class='day_offers' id='vuelta07-10'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 8 </p>
+                    <div class='day_offers' id='vuelta08-10'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 9 </p>
+                    <div class='day_offers' id='vuelta09-10'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 10 </p>
+                    <div class='day_offers' id='vuelta10-10'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 11 </p>
+                    <div class='day_offers' id='vuelta11-10'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 12 </p>
+                    <div class='day_offers' id='vuelta12-10'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 13 </p>
+                    <div class='day_offers' id='vuelta13-10'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 14 </p>
+                    <div class='day_offers' id='vuelta14-10'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 15 </p>
+                    <div class='day_offers' id='vuelta15-10'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 16 </p>
+                    <div class='day_offers' id='vuelta16-10'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 17 </p>
+                    <div class='day_offers' id='vuelta17-10'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 18 </p>
+                    <div class='day_offers' id='vuelta18-10'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 19 </p>
+                    <div class='day_offers' id='vuelta19-10'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 20 </p>
+                    <div class='day_offers' id='vuelta20-10'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 21 </p>
+                    <div class='day_offers' id='vuelta21-10'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 22 </p>
+                    <div class='day_offers' id='vuelta22-10'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 23 </p>
+                    <div class='day_offers' id='vuelta23-10'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 24 </p>
+                    <div class='day_offers' id='vuelta24-10'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 25 </p>
+                    <div class='day_offers' id='vuelta25-10'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 26 </p>
+                    <div class='day_offers' id='vuelta26-10'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 27 </p>
+                    <div class='day_offers' id='vuelta27-10'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 28 </p>
+                    <div class='day_offers' id='vuelta28-10'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 29 </p>
+                    <div class='day_offers' id='vuelta29-10'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 30 </p>
+                    <div class='day_offers' id='vuelta30-10'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 31 </p>
+                    <div class='day_offers' id='vuelta31-10'>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class='month'>
+            <h2 class="vuelta_month_name"> noviembre </h2>
+            <div class='month_days'>
+                <div class='day'>
+                    <p> 1 </p>
+                    <div class='day_offers' id='vuelta01-11'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 2 </p>
+                    <div class='day_offers' id='vuelta02-11'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 3 </p>
+                    <div class='day_offers' id='vuelta03-11'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 4 </p>
+                    <div class='day_offers' id='vuelta04-11'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 5 </p>
+                    <div class='day_offers' id='vuelta05-11'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 6 </p>
+                    <div class='day_offers' id='vuelta06-11'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 7 </p>
+                    <div class='day_offers' id='vuelta07-11'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 8 </p>
+                    <div class='day_offers' id='vuelta08-11'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 9 </p>
+                    <div class='day_offers' id='vuelta09-11'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 10 </p>
+                    <div class='day_offers' id='vuelta10-11'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 11 </p>
+                    <div class='day_offers' id='vuelta11-11'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 12 </p>
+                    <div class='day_offers' id='vuelta12-11'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 13 </p>
+                    <div class='day_offers' id='vuelta13-11'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 14 </p>
+                    <div class='day_offers' id='vuelta14-11'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 15 </p>
+                    <div class='day_offers' id='vuelta15-11'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 16 </p>
+                    <div class='day_offers' id='vuelta16-11'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 17 </p>
+                    <div class='day_offers' id='vuelta17-11'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 18 </p>
+                    <div class='day_offers' id='vuelta18-11'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 19 </p>
+                    <div class='day_offers' id='vuelta19-11'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 20 </p>
+                    <div class='day_offers' id='vuelta20-11'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 21 </p>
+                    <div class='day_offers' id='vuelta21-11'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 22 </p>
+                    <div class='day_offers' id='vuelta22-11'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 23 </p>
+                    <div class='day_offers' id='vuelta23-11'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 24 </p>
+                    <div class='day_offers' id='vuelta24-11'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 25 </p>
+                    <div class='day_offers' id='vuelta25-11'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 26 </p>
+                    <div class='day_offers' id='vuelta26-11'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 27 </p>
+                    <div class='day_offers' id='vuelta27-11'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 28 </p>
+                    <div class='day_offers' id='vuelta28-11'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 29 </p>
+                    <div class='day_offers' id='vuelta29-11'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 30 </p>
+                    <div class='day_offers' id='vuelta30-11'>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class='month'>
+            <h2 class="vuelta_month_name"> diciembre </h2>
+            <div class='month_days'>
+                <div class='day'>
+                    <p> </p>
+                    <div class='day_offers'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> </p>
+                    <div class='day_offers'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 1 </p>
+                    <div class='day_offers' id='vuelta01-12'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 2 </p>
+                    <div class='day_offers' id='vuelta02-12'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 3 </p>
+                    <div class='day_offers' id='vuelta03-12'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 4 </p>
+                    <div class='day_offers' id='vuelta04-12'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 5 </p>
+                    <div class='day_offers' id='vuelta05-12'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 6 </p>
+                    <div class='day_offers' id='vuelta06-12'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 7 </p>
+                    <div class='day_offers' id='vuelta07-12'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 8 </p>
+                    <div class='day_offers' id='vuelta08-12'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 9 </p>
+                    <div class='day_offers' id='vuelta09-12'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 10 </p>
+                    <div class='day_offers' id='vuelta10-12'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 11 </p>
+                    <div class='day_offers' id='vuelta11-12'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 12 </p>
+                    <div class='day_offers' id='vuelta12-12'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 13 </p>
+                    <div class='day_offers' id='vuelta13-12'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 14 </p>
+                    <div class='day_offers' id='vuelta14-12'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 15 </p>
+                    <div class='day_offers' id='vuelta15-12'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 16 </p>
+                    <div class='day_offers' id='vuelta16-12'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 17 </p>
+                    <div class='day_offers' id='vuelta17-12'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 18 </p>
+                    <div class='day_offers' id='vuelta18-12'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 19 </p>
+                    <div class='day_offers' id='vuelta19-12'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 20 </p>
+                    <div class='day_offers' id='vuelta20-12'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 21 </p>
+                    <div class='day_offers' id='vuelta21-12'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 22 </p>
+                    <div class='day_offers' id='vuelta22-12'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 23 </p>
+                    <div class='day_offers' id='vuelta23-12'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 24 </p>
+                    <div class='day_offers' id='vuelta24-12'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 25 </p>
+                    <div class='day_offers' id='vuelta25-12'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 26 </p>
+                    <div class='day_offers' id='vuelta26-12'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 27 </p>
+                    <div class='day_offers' id='vuelta27-12'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 28 </p>
+                    <div class='day_offers' id='vuelta28-12'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 29 </p>
+                    <div class='day_offers' id='vuelta29-12'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 30 </p>
+                    <div class='day_offers' id='vuelta30-12'>
+                    </div>
+                </div>
+                <div class='day'>
+                    <p> 31 </p>
+                    <div class='day_offers' id='vuelta31-12'>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
